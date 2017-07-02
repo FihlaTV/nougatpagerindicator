@@ -73,4 +73,4 @@ License
 
 
 
- [1]: https://raw.githubusercontent.com/mroczis/nougatpagerindicator/master
+ [1]: https://github.com/mroczis/nougatpagerindicator/blob/master/sample.gif?raw=true
