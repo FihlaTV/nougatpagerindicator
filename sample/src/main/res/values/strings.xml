@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Nougat Pager Indicator</string>
+    <string name="title_view_pager">Usage with ViewPager</string>
+    <string name="title_manual">Manual usage</string>
+    <string name="page_number">Page number %d</string>
+    <string name="arrow_left">«</string>
+    <string name="arrow_right">»</string>
+    <string name="random">Random</string>
+</resources>

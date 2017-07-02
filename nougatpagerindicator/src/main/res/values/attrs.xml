@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PagerIndicator">
+        <!-- Radius of one dot -->
+        <attr name="npiDotRadius" format="dimension"/>
+        <!-- Spade between two neighbouring dots -->
+        <attr name="npiDotSpacing" format="dimension"/>
+        <!-- Color for dot that is currently active -->
+        <attr name="npiActiveDotColor" format="color"/>
+        <!-- Color for dot that is currently inactive -->
+        <attr name="npiInactiveDotColor" format="color"/>
+        <!-- Total count of initial dots -->
+        <attr name="npiDotsCount" format="integer"/>
+        <!-- Selected dot by default -->
+        <attr name="npiActiveDot" format="integer"/>
+    </declare-styleable>
+</resources>

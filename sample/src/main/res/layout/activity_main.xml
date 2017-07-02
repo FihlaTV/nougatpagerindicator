@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/content_spacing_default"
+        android:paddingTop="@dimen/content_spacing_default">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="@dimen/content_spacing_default"
+                android:paddingLeft="@dimen/content_spacing_default"
+                android:paddingRight="@dimen/content_spacing_default"
+                android:text="@string/title_view_pager"
+                android:textColor="@color/colorGray"
+            />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+
+            <cz.mroczis.nougatpagerindicator.PagerIndicator
+                android:id="@+id/indicator_automatic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_spacing_default"
+                app:npiActiveDotColor="@color/colorOrange"
+                app:npiInactiveDotColor="@color/colorGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/content_spacing_default"
+                android:layout_marginRight="@dimen/content_spacing_default"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/move_left_automatic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/arrow_left"
+                    android:layout_marginBottom="@dimen/content_spacing_default"
+                    android:theme="@style/Button.Orange"/>
+
+                <Button
+                    android:id="@+id/move_right_automatic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/arrow_right"
+                    android:layout_marginBottom="@dimen/content_spacing_default"
+                    android:theme="@style/Button.Orange"/>
+
+                <Button
+                    android:id="@+id/move_random_automatic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/random"
+                    android:layout_marginBottom="@dimen/content_spacing_default"
+                    android:theme="@style/Button.Orange"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="@dimen/content_spacing_default"
+                android:text="@string/title_manual"
+                android:textColor="@color/colorGray"
+
+            />
+
+            <cz.mroczis.nougatpagerindicator.PagerIndicator
+                android:id="@+id/indicator_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_spacing_default"
+                app:npiActiveDot="1"
+                app:npiActiveDotColor="@color/colorOrange"
+                app:npiDotRadius="3dp"
+                app:npiDotSpacing="6dp"
+                app:npiDotsCount="5"
+                app:npiInactiveDotColor="@color/colorGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/content_spacing_default"
+                android:layout_marginRight="@dimen/content_spacing_default"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/move_left_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/content_spacing_default"
+                    android:layout_weight="1"
+                    android:text="@string/arrow_left"
+                    android:theme="@style/Button.Orange"/>
+
+                <Button
+                    android:id="@+id/move_right_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/content_spacing_default"
+                    android:layout_weight="1"
+                    android:text="@string/arrow_right"
+                    android:theme="@style/Button.Orange"/>
+
+                <Button
+                    android:id="@+id/move_random_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/content_spacing_default"
+                    android:layout_weight="1"
+                    android:text="@string/random"
+                    android:theme="@style/Button.Orange"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

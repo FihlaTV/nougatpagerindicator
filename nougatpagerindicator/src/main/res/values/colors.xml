@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pi_default_pager_active">#000000</color>
+    <color name="pi_default_pager_inactive">#acacac</color>
+    <color name="pi_default_pager_glue">#000000</color>
+</resources>

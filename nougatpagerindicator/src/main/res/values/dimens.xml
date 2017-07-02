@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pi_dot_radius">2.75dp</dimen>
+    <dimen name="pi_dot_spacing">4dp</dimen>
+</resources>

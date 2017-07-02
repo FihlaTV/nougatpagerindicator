@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="SampleTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorOrange</item>
+        <item name="android:textColorPrimary">@color/textColor</item>
+        <!-- Android L+ -->
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <!-- Android M+ -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Toolbar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+
+    <style name="Button" parent="Widget.AppCompat.Button"/>
+
+    <style name="Button.Orange" parent="Button">
+        <item name="colorButtonNormal">@color/colorOrange</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+    </style>
+</resources>
