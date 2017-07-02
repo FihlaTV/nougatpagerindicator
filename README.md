@@ -16,6 +16,15 @@ Getting started
   Include dependency into your project.
   
     compile 'io.github.mroczis:nougatpagerindicator:1.0.0'
+    
+    
+  It is available on `jcenter`, so do not forget to link it in your root `build.gradle`.
+  
+    allprojects {
+        repositories {
+            jcenter()
+        }
+    }
 
   Add `PagerIndicator` to XML anywhere you like.
 
